@@ -1,0 +1,152 @@
+.featured-card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @media (max-width: 1200px) {
+    gap: 10px;
+  }
+
+  &__img-wrapper {
+    position: relative;
+  }
+
+  &__img {
+    height: 382px;
+    border-radius: 24px;
+
+    @media (max-width: 1200px) {
+      height: 300px;
+      max-width: 250px;
+    }
+
+    @include vp-1023 {
+      max-width: 230px;
+      border-radius: 16px;
+    }
+  }
+
+  &__trait {
+    position: absolute;
+    left: 16px;
+    bottom: 16px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 8px 16px 10px;
+    border-radius: 32px;
+    pointer-events: none;
+
+    @include vp-1023 {
+      padding: 5px 10px;
+      gap: 5px;
+    }
+
+    &--popular {
+      color: $color-carmine-pink;
+      background-color: $color-misty-rose;
+    }
+
+    &--new-house {
+      color: $color-new-car;
+      background-color: $color-azureish-white;
+    }
+
+    &--best-deal {
+      color: $color-tropical-rain-forest;
+      background-color: $color-aero-blue;
+    }
+
+    &-icon {
+      @include vp-1023 {
+        width: 12px;
+        height: 12px;
+      }
+    }
+
+    &-text {
+      font-weight: 500;
+      font-size: 14px;
+
+      @include vp-1023 {
+        font-size: 12px;
+      }
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__title {
+    color: $color-space-cadet;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0;
+    padding: 0;
+
+    @include vp-1023 {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  &__price {
+    color: $color-police-blue;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+
+    @include vp-1023 {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    @include vp-1023 {
+      gap: 10px;
+    }
+
+    &-img {
+      filter: drop-shadow(0px 9px 22px $color-mayorelle-blue);
+    }
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    &-name {
+      color: $color-space-cadet;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+
+      @include vp-1023 {
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+
+    &-city {
+      color: $color-roman-silver;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 22px;
+
+      @include vp-1023 {
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+  }
+}

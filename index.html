@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hounter - Find The Place To Live Your Dreams Easily Here</title>
+  <!-- Swiper.js -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Tabby for orgainizing tabs -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/gh/cferdinandi/tabby@12/dist/css/tabby-ui.min.css">
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/tabby@12/dist/js/tabby.polyfills.min.js"></script>
+  <!-- Accordion.js for footer nav -->
+  <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css">
+  <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="index.js"></script>
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__content">
+        <div class="header__logo">
+          <a class="header__logo-link" href="index.html" aria-label="Link to the main page">
+            <!-- Import SVG-graphics via sprite.svg -->
+            <svg class="header__logo-icon" width="36" height="36" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#logo"></use>
+            </svg>
+            <span class="header__logo-text">Hounter</span>
+          </a>
+        </div>
+        <div class="header__btn-block">
+          <nav class="main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item main-nav__item--burger">
+                <!-- Reusing btn styles via modificators -->
+                <button class="main-nav__link btn btn--round btn--transparent btn--big" type="button">
+                  <svg class="main-nav__link-icon" width="18" height="18">
+                    <use xlink:href="images/sprite.svg#icon-burger"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link btn btn--round btn--transparent" href="#">About Us</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link btn btn--round btn--transparent" href="#">Article</a>
+              </li>
+              <li class="main-nav__item">
+                <button class="main-nav__link btn btn--round btn--transparent" type="button">
+                  <span>Property</span>
+                  <svg class="main-nav__link-icon" width="18" height="18" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-arrow-down"></use>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </nav>
+          <button class="main-nav__signup-btn btn btn--round btn--light-green" type="button">Sign Up!</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero__content">
+          <div class="hero__left-column">
+            <!-- Hidden section title due to absence of a proper title -->
+            <h1 class="visually-hidden">Hounter Main Page</h1>
+            <div class="hero__slogan-block">
+              <p class="hero__slogan">find the place to</p>
+              <p class="hero__slogan">live <strong>your&nbsp;dreams</strong></p>
+              <p class="hero__slogan">easily here</p>
+            </div>
+            <p class="hero__subtext">Everything you need about finding your place to live will be here, where it will be
+              easier for you</p>
+            <!-- Custom input component -->
+            <div class="hero__search-wrapper">
+              <form class="custom-input" action="#" method="POST">
+                <input class="custom-input__input" type="text" name="search" id="search"
+                  placeholder="Search for the location you want!">
+                <svg class="custom-input__input-icon custom-input__input-icon--orange" width="24" height="24"
+                  aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-location"></use>
+                </svg>
+                <button class="custom-input__submit-btn btn btn--round btn--deep-green" type="submit"
+                  aria-label="Search button">
+                  <span class="custom-input__submit-btn-text custom-input__submit-btn-text">Search</span>
+                  <svg class="custom-input__submit-btn-icon" width="24" height="24" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-arrow-forward"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
+            <div class="hero__partnership">
+              <span class="hero__partnership-text">Our Partnership</span>
+              <ul class="hero__partnership-list">
+                <li class="hero__partnership-item">
+                  <a class="hero__partnership-link" href="#" aria-label="Link to Traveloka">
+                    <!-- Srcset for retina displays -->
+                    <img class="hero__partnership-img" src="images/hero/partners/traveloka_logo.png"
+                      srcset="images/hero/partners/traveloka_logo@2x.png 2x" height="64" width="83"
+                      alt="Traveloka logo">
+                  </a>
+                </li>
+                <li class="hero__partnership-item">
+                  <a class="hero__partnership-link" href="#" aria-label="Link to Ticket.com">
+                    <img class="hero__partnership-img" src="images/hero/partners/ticketcom.png"
+                      srcset="images/hero/partners/ticketcom@2x.png 2x" height="64" width="83" alt="Ticket.com logo">
+                  </a>
+                </li>
+                <li class="hero__partnership-item">
+                  <a class="hero__partnership-link" href="#" aria-label="Link to Airbnb">
+                    <img class="hero__partnership-img" src="images/hero/partners/airbnb.png"
+                      srcset="images/hero/partners/airbnb@2x.png 2x" height="64" width="83" alt="Airbnb logo">
+                  </a>
+                </li>
+                <li class="hero__partnership-item">
+                  <a class="hero__partnership-link" href="#" aria-label="Link to Tripadvisor">
+                    <img class="hero__partnership-img" src="images/hero/partners/tripadvisor.png"
+                      srcset="images/hero/partners/tripadvisor@2x.png 2x" height="64" width="83" alt="Tripadvisor logo">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="hero__right-column">
+            <div class="hero-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="hero-card">
+                    <img class="hero-card__img" src="images/hero/cards/card1/img.png"
+                      srcset="images/hero/cards/card1/img@2x.png 2x" height="56" width="112" alt="Clients photo">
+                    <div class="hero-card__text-wrapper">
+                      <h2 class="hero-card__title">1K+ People</h2>
+                      <p class="hero-card__description">Successfully Getting Home</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero-card">
+                    <img class="hero-card__img" src="images/hero/cards/card2/img.png"
+                      srcset="images/hero/cards/card2/img@2x.png 2x" height="56" width="56" alt="House photo">
+                    <div class="hero-card__text-wrapper">
+                      <h2 class="hero-card__title">56 Houses</h2>
+                      <p class="hero-card__description">Sold Monthly</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero-card">
+                    <img class="hero-card__img" src="images/hero/cards/card3/img.png"
+                      srcset="images/hero/cards/card3/img@2x.png 2x" height="56" width="56" alt="Client photo">
+                    <div class="hero-card__text-wrapper">
+                      <h2 class="hero-card__title">4K+</h2>
+                      <p class="hero-card__description">People Looking for New Homes</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured">
+      <div class="container">
+        <div class="featured__content">
+          <div class="featured__title-wrapper">
+            <div class="title-block">
+              <span class="title-block__subtitle">Our featured</span>
+              <h2 class="title-block__title">Featured House</h2>
+            </div>
+          </div>
+          <!-- Using Tabby library for organizing tabs -->
+          <ul class="featured__btn-list" data-tabs>
+            <li class="featured__btn-list-item">
+              <a class="featured__btn" data-tabby-default href="#houses">
+                <svg class="featured__btn-icon" width="24" height="24" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-house"></use>
+                </svg>
+                <span class="featured__btn-text">House</span>
+              </a>
+            </li>
+            <li class="featured__btn-list-item">
+              <a class="featured__btn" href="#villas">
+                <svg class="featured__btn-icon" width="24" height="24" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-villa"></use>
+                </svg>
+                <span class="featured__btn-text">Villa</span>
+              </a>
+            </li>
+            <li class="featured__btn-list-item">
+              <a class="featured__btn" href="#apartments">
+                <svg class="featured__btn-icon" width="24" height="24" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-apartment"></use>
+                </svg>
+                <span class="featured__btn-text">Apartment</span>
+              </a>
+            </li>
+          </ul>
+          <div id="houses">
+            <!-- Adding a swiper for each tab -->
+            <div class="featured-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a class="featured-card" href="#">
+                    <div class="featured-card__img-wrapper">
+                      <img class="featured-card__img" src="images/featured/card1/img.jpg"
+                        srcset="images/featured/card1/img@2x.jpg 2x" height="382" width="340"
+                        alt="Roselands House photo">
+                      <div class="featured-card__trait featured-card__trait--popular">
+                        <svg class="featured-card__trait-icon" width="16" height="16" aria-hidden="true">
+                          <use xlink:href="images/sprite.svg#icon-popular"></use>
+                        </svg>
+                        <span class="featured-card__trait-text">
+                          Popular
+                        </span>
+                      </div>
+                    </div>
+                    <div class="featured-card__text">
+                      <h3 class="featured-card__title">
+                        Roselands House
+                      </h3>
+                      <span class="featured-card__price">$ 35.000.000</span>
+                    </div>
+                    <div class="featured-card__user">
+                      <img class="featured-card__user-img" src="images/featured/card1/user.png"
+                        srcset="images/featured/card1/user@2x.png 2x" height="40" width="40"
+                        alt="Roselands House owner photo">
+                      <div class="featured-card__user-text">
+                        <span class="featured-card__user-name">Dianne Russell</span>
+                        <span class="featured-card__user-city">Manchester, Kentucky</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a class="featured-card" href="#">
+                    <div class="featured-card__img-wrapper">
+                      <img class="featured-card__img" src="images/featured/card2/img.jpg"
+                        srcset="images/featured/card2/img@2x.jpg 2x" height="382" width="340" alt="Woodlandside photo">
+                      <div class="featured-card__trait featured-card__trait--new-house">
+                        <svg class="featured-card__trait-icon" width="16" height="16" aria-hidden="true">
+                          <use xlink:href="images/sprite.svg#icon-house"></use>
+                        </svg>
+                        <span class="featured-card__trait-text">
+                          New House
+                        </span>
+                      </div>
+                    </div>
+                    <div class="featured-card__text">
+                      <h3 class="featured-card__title">
+                        Woodlandside
+                      </h3>
+                      <span class="featured-card__price">$ 20.000.000</span>
+                    </div>
+                    <div class="featured-card__user">
+                      <img class="featured-card__user-img" src="images/featured/card2/user.png"
+                        srcset="images/featured/card2/user@2x.png 2x" height="40" width="40"
+                        alt="Woodlandside owner photo">
+                      <div class="featured-card__user-text">
+                        <span class="featured-card__user-name">Robert Fox</span>
+                        <span class="featured-card__user-city">Dr. San Jose, South Dakota</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a class="featured-card" href="#">
+                    <div class="featured-card__img-wrapper">
+                      <img class="featured-card__img" src="images/featured/card3/img.jpg"
+                        srcset="images/featured/card3/img@2x.jpg 2x" height="382" width="340"
+                        alt="The Old Lighthouse photo">
+                      <div class="featured-card__trait featured-card__trait--best-deal">
+                        <svg class="featured-card__trait-icon" width="16" height="16" aria-hidden="true">
+                          <use xlink:href="images/sprite.svg#icon-bestdeal"></use>
+                        </svg>
+                        <span class="featured-card__trait-text">
+                          Best Deals
+                        </span>
+                      </div>
+                    </div>
+                    <div class="featured-card__text">
+                      <h3 class="featured-card__title">
+                        The Old Lighthouse
+                      </h3>
+                      <span class="featured-card__price">$ 44.000.000</span>
+                    </div>
+                    <div class="featured-card__user">
+                      <img class="featured-card__user-img" src="images/featured/card3/user.png"
+                        srcset="images/featured/card3/user@2x.png 2x" height="40" width="40"
+                        alt="The Old Lighthouse owner photo">
+                      <div class="featured-card__user-text">
+                        <span class="featured-card__user-name">Ronald Richards</span>
+                        <span class="featured-card__user-city">Santa Ana, Illinois</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a class="featured-card" href="#">
+                    <div class="featured-card__img-wrapper">
+                      <img class="featured-card__img" src="images/featured/card4/img.jpg"
+                        srcset="images/featured/card4/img@2x.jpg 2x" height="382" width="340" alt="Cosmo's House photo">
+                      <div class="featured-card__trait featured-card__trait--popular">
+                        <svg class="featured-card__trait-icon" width="16" height="16" aria-hidden="true">
+                          <use xlink:href="images/sprite.svg#icon-popular"></use>
+                        </svg>
+                        <span class="featured-card__trait-text">
+                          Popular
+                        </span>
+                      </div>
+                    </div>
+                    <div class="featured-card__text">
+                      <h3 class="featured-card__title">
+                        Cosmo's House
+                      </h3>
+                      <span class="featured-card__price">$ 22.000.000</span>
+                    </div>
+                    <div class="featured-card__user">
+                      <img class="featured-card__user-img" src="images/featured/card4/user.png"
+                        srcset="images/featured/card4/user@2x.png 2x" height="40" width="40"
+                        alt="Cosmo's House owner photo">
+                      <div class="featured-card__user-text">
+                        <span class="featured-card__user-name">Jenny Wilson</span>
+                        <span class="featured-card__user-city">Preston Rd. Inglewood, Maine 98380</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-button-wrapper">
+                <div class="swiper-button-prev">
+                </div>
+                <div class="swiper-button-next">
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div id="villas">
+            <div class="featured-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a class="featured-card" href="#">
+                    <div class="featured-card__img-wrapper">
+                      <img class="featured-card__img" src="images/featured/card1/img.jpg"
+                        srcset="images/featured/card1/img@2x.jpg 2x" height="382" width="340"
+                        alt="Roselands House photo">
+                      <div class="featured-card__trait featured-card__trait--popular">
+                        <svg class="featured-card__trait-icon" width="16" height="16" aria-hidden="true">
+                          <use xlink:href="images/sprite.svg#icon-popular"></use>
+                        </svg>
+                        <span class="featured-card__trait-text">
+                          Popular
+                        </span>
+                      </div>
+                    </div>
+                    <div class="featured-card__text">
+                      <h3 class="featured-card__title">
+                        Villa 1
+                      </h3>
+                      <span class="featured-card__price">$ 70.000.000</span>
+                    </div>
+                    <div class="featured-card__user">
+                      <img class="featured-card__user-img" src="images/featured/card1/user.png"
+                        srcset="images/featured/card1/user@2x.png 2x" height="40" width="40"
+                        alt="Roselands House owner photo">
+                      <div class="featured-card__user-text">
+                        <span class="featured-card__user-name">Dianne Russell</span>
+                        <span class="featured-card__user-city">Manchester, Kentucky</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a class="featured-card" href="#">
+                    <div class="featured-card__img-wrapper">
+                      <img class="featured-card__img" src="images/featured/card2/img.jpg"
+                        srcset="images/featured/card2/img@2x.jpg 2x" height="382" width="340" alt="Woodlandside photo">
+                      <div class="featured-card__trait featured-card__trait--new-house">
+                        <svg class="featured-card__trait-icon" width="16" height="16" aria-hidden="true">
+                          <use xlink:href="images/sprite.svg#icon-house"></use>
+                        </svg>
+                        <span class="featured-card__trait-text">
+                          New House
+                        </span>
+                      </div>
+                    </div>
+                    <div class="featured-card__text">
+                      <h3 class="featured-card__title">
+                        Villa 2
+                      </h3>
+                      <span class="featured-card__price">$ 40.000.000</span>
+                    </div>
+                    <div class="featured-card__user">
+                      <img class="featured-card__user-img" src="images/featured/card2/user.png"
+                        srcset="images/featured/card2/user@2x.png 2x" height="40" width="40"
+                        alt="Woodlandside owner photo">
+                      <div class="featured-card__user-text">
+                        <span class="featured-card__user-name">Robert Fox</span>
+                        <span class="featured-card__user-city">Dr. San Jose, South Dakota</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a class="featured-card" href="#">
+                    <div class="featured-card__img-wrapper">
+                      <img class="featured-card__img" src="images/featured/card3/img.jpg"
+                        srcset="images/featured/card3/img@2x.jpg 2x" height="382" width="340"
+                        alt="The Old Lighthouse photo">
+                      <div class="featured-card__trait featured-card__trait--best-deal">
+                        <svg class="featured-card__trait-icon" width="16" height="16" aria-hidden="true">
+                          <use xlink:href="images/sprite.svg#icon-bestdeal"></use>
+                        </svg>
+                        <span class="featured-card__trait-text">
+                          Best Deals
+                        </span>
+                      </div>
+                    </div>
+                    <div class="featured-card__text">
+                      <h3 class="featured-card__title">
+                        Villa 3
+                      </h3>
+                      <span class="featured-card__price">$ 58.000.000</span>
+                    </div>
+                    <div class="featured-card__user">
+                      <img class="featured-card__user-img" src="images/featured/card3/user.png"
+                        srcset="images/featured/card3/user@2x.png 2x" height="40" width="40"
+                        alt="The Old Lighthouse owner photo">
+                      <div class="featured-card__user-text">
+                        <span class="featured-card__user-name">Ronald Richards</span>
+                        <span class="featured-card__user-city">Santa Ana, Illinois</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a class="featured-card" href="#">
+                    <div class="featured-card__img-wrapper">
+                      <img class="featured-card__img" src="images/featured/card4/img.jpg"
+                        srcset="images/featured/card4/img@2x.jpg 2x" height="382" width="340" alt="Cosmo's House photo">
+                      <div class="featured-card__trait featured-card__trait--popular">
+                        <svg class="featured-card__trait-icon" width="16" height="16" aria-hidden="true">
+                          <use xlink:href="images/sprite.svg#icon-popular"></use>
+                        </svg>
+                        <span class="featured-card__trait-text">
+                          Popular
+                        </span>
+                      </div>
+                    </div>
+                    <div class="featured-card__text">
+                      <h3 class="featured-card__title">
+                        Villa 4
+                      </h3>
+                      <span class="featured-card__price">$ 37.000.000</span>
+                    </div>
+                    <div class="featured-card__user">
+                      <img class="featured-card__user-img" src="images/featured/card4/user.png"
+                        srcset="images/featured/card4/user@2x.png 2x" height="40" width="40"
+                        alt="Cosmo's House owner photo">
+                      <div class="featured-card__user-text">
+                        <span class="featured-card__user-name">Jenny Wilson</span>
+                        <span class="featured-card__user-city">Preston Rd. Inglewood, Maine 98380</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-button-wrapper">
+                <div class="swiper-button-prev">
+                </div>
+                <div class="swiper-button-next">
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div id="apartments">
+            <div class="featured-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a class="featured-card" href="#">
+                    <div class="featured-card__img-wrapper">
+                      <img class="featured-card__img" src="images/featured/card1/img.jpg"
+                        srcset="images/featured/card1/img@2x.jpg 2x" height="382" width="340"
+                        alt="Roselands House photo">
+                      <div class="featured-card__trait featured-card__trait--popular">
+                        <svg class="featured-card__trait-icon" width="16" height="16" aria-hidden="true">
+                          <use xlink:href="images/sprite.svg#icon-popular"></use>
+                        </svg>
+                        <span class="featured-card__trait-text">
+                          Popular
+                        </span>
+                      </div>
+                    </div>
+                    <div class="featured-card__text">
+                      <h3 class="featured-card__title">
+                        Apartment 1
+                      </h3>
+                      <span class="featured-card__price">$ 10.000.000</span>
+                    </div>
+                    <div class="featured-card__user">
+                      <img class="featured-card__user-img" src="images/featured/card1/user.png"
+                        srcset="images/featured/card1/user@2x.png 2x" height="40" width="40"
+                        alt="Roselands House owner photo">
+                      <div class="featured-card__user-text">
+                        <span class="featured-card__user-name">Dianne Russell</span>
+                        <span class="featured-card__user-city">Manchester, Kentucky</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a class="featured-card" href="#">
+                    <div class="featured-card__img-wrapper">
+                      <img class="featured-card__img" src="images/featured/card2/img.jpg"
+                        srcset="images/featured/card2/img@2x.jpg 2x" height="382" width="340" alt="Woodlandside photo">
+                      <div class="featured-card__trait featured-card__trait--new-house">
+                        <svg class="featured-card__trait-icon" width="16" height="16" aria-hidden="true">
+                          <use xlink:href="images/sprite.svg#icon-house"></use>
+                        </svg>
+                        <span class="featured-card__trait-text">
+                          New House
+                        </span>
+                      </div>
+                    </div>
+                    <div class="featured-card__text">
+                      <h3 class="featured-card__title">
+                        Apartment 2
+                      </h3>
+                      <span class="featured-card__price">$ 17.000.000</span>
+                    </div>
+                    <div class="featured-card__user">
+                      <img class="featured-card__user-img" src="images/featured/card2/user.png"
+                        srcset="images/featured/card2/user@2x.png 2x" height="40" width="40"
+                        alt="Woodlandside owner photo">
+                      <div class="featured-card__user-text">
+                        <span class="featured-card__user-name">Robert Fox</span>
+                        <span class="featured-card__user-city">Dr. San Jose, South Dakota</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a class="featured-card" href="#">
+                    <div class="featured-card__img-wrapper">
+                      <img class="featured-card__img" src="images/featured/card3/img.jpg"
+                        srcset="images/featured/card3/img@2x.jpg 2x" height="382" width="340"
+                        alt="The Old Lighthouse photo">
+                      <div class="featured-card__trait featured-card__trait--best-deal">
+                        <svg class="featured-card__trait-icon" width="16" height="16" aria-hidden="true">
+                          <use xlink:href="images/sprite.svg#icon-bestdeal"></use>
+                        </svg>
+                        <span class="featured-card__trait-text">
+                          Best Deals
+                        </span>
+                      </div>
+                    </div>
+                    <div class="featured-card__text">
+                      <h3 class="featured-card__title">
+                        Apartment 3
+                      </h3>
+                      <span class="featured-card__price">$ 28.000.000</span>
+                    </div>
+                    <div class="featured-card__user">
+                      <img class="featured-card__user-img" src="images/featured/card3/user.png"
+                        srcset="images/featured/card3/user@2x.png 2x" height="40" width="40"
+                        alt="The Old Lighthouse owner photo">
+                      <div class="featured-card__user-text">
+                        <span class="featured-card__user-name">Ronald Richards</span>
+                        <span class="featured-card__user-city">Santa Ana, Illinois</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a class="featured-card" href="#">
+                    <div class="featured-card__img-wrapper">
+                      <img class="featured-card__img" src="images/featured/card4/img.jpg"
+                        srcset="images/featured/card4/img@2x.jpg 2x" height="382" width="340" alt="Cosmo's House photo">
+                      <div class="featured-card__trait featured-card__trait--popular">
+                        <svg class="featured-card__trait-icon" width="16" height="16" aria-hidden="true">
+                          <use xlink:href="images/sprite.svg#icon-popular"></use>
+                        </svg>
+                        <span class="featured-card__trait-text">
+                          Popular
+                        </span>
+                      </div>
+                    </div>
+                    <div class="featured-card__text">
+                      <h3 class="featured-card__title">
+                        Apartment 4
+                      </h3>
+                      <span class="featured-card__price">$ 19.000.000</span>
+                    </div>
+                    <div class="featured-card__user">
+                      <img class="featured-card__user-img" src="images/featured/card4/user.png"
+                        srcset="images/featured/card4/user@2x.png 2x" height="40" width="40"
+                        alt="Cosmo's House owner photo">
+                      <div class="featured-card__user-text">
+                        <span class="featured-card__user-name">Jenny Wilson</span>
+                        <span class="featured-card__user-city">Preston Rd. Inglewood, Maine 98380</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-button-wrapper">
+                <div class="swiper-button-prev">
+                </div>
+                <div class="swiper-button-next">
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="tour">
+      <div class="container">
+        <div class="tour__content">
+          <div class="tour__left-column">
+            <div class="tour__title-wrapper">
+              <div class="title-block">
+                <span class="title-block__subtitle">Ready to Sell!</span>
+                <h2 class="title-block__title">Let’s tour and see our house!</h2>
+              </div>
+            </div>
+            <div class="tour__text-block">
+              <p class="tour__description">Houses recommended by our partners that have been curated to become the home
+                of
+                your dreams!</p>
+              <div class="tour__details">
+                <h2 class="tour__details-title">House Detail</h2>
+                <ul class="tour__details-list">
+                  <li class="tour__detail-list-item">
+                    <svg class="tour__detail-icon" width="32" height="32" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-bedroom"></use>
+                    </svg>
+                    <span class="tour__detail-text">4 Bedrooms</span>
+                  </li>
+                  <li class="tour__detail-list-item">
+                    <svg class="tour__detail-icon" width="32" height="32" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-bathroom"></use>
+                    </svg>
+                    <span class="tour__detail-text">2 Bathrooms</span>
+                  </li>
+                  <li class="tour__detail-list-item">
+                    <svg class="tour__detail-icon" width="32" height="32" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-carport"></use>
+                    </svg>
+                    <span class="tour__detail-text">1 Carport</span>
+                  </li>
+                  <li class="tour__detail-list-item">
+                    <svg class="tour__detail-icon" width="32" height="32" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-floors"></use>
+                    </svg>
+                    <span class="tour__detail-text">2 Floors</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="tour__contacts">
+              <div class="tour__contacts-user">
+                <img class="tour__contacts-user-img" src="images/tour/contacts/user.png"
+                  srcset="images/tour/contacts/user@2x.png 2x" height="56" width="56" alt="House owner photo">
+                <div class="tour__contacts-user-text">
+                  <span class="tour__contacts-user-name">Dianne Russell</span>
+                  <span class="tour__contacts-user-position">Manager Director</span>
+                </div>
+              </div>
+              <a class="tour__contacts-btn btn btn--round btn--deep-green" href="tel:88000000000">
+                <svg class="tour__contacts-btn-icon" width="24" height="24" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-phone"></use>
+                </svg>
+                <span class="tour__contacts-btn-text">Contact Now</span>
+              </a>
+            </div>
+          </div>
+          <div class="tour__right-column">
+            <div class="gallery">
+              <ul class="gallery__photo-list">
+                <li class="gallery__photo-list-item">
+                  <a class="gallery__photo-link" href="#slide-1" aria-label="Open photo">
+                    <img class="gallery__photo-link-img" src="images/tour/photos/thumbnails/photo1.jpg"
+                      srcset="images/tour/photos/thumbnails/photo1@2x.jpg 2x" height="416" width="488"
+                      alt="House photo 1">
+                  </a>
+                </li>
+                <li class="gallery__photo-list-item">
+                  <a class="gallery__photo-link" href="#slide-2" aria-label="Open photo">
+                    <img class="gallery__photo-link-img" src="images/tour/photos/thumbnails/photo2.jpg"
+                      srcset="images/tour/photos/thumbnails/photo2@2x.jpg 2x" height="168" width="296"
+                      alt="House photo 2">
+                  </a>
+                </li>
+                <li class="gallery__photo-list-item">
+                  <a class="gallery__photo-link" href="#slide-3" aria-label="Open photo">
+                    <img class="gallery__photo-link-img" src="images/tour/photos/thumbnails/photo3.jpg"
+                      srcset="images/tour/photos/thumbnails/photo3@2x.jpg 2x" height="80" width="96"
+                      alt="House photo 3">
+                  </a>
+                </li>
+                <li class="gallery__photo-list-item">
+                  <a class="gallery__photo-link" href="#slide-4" aria-label="Open photo">
+                    <img class="gallery__photo-link-img" src="images/tour/photos/thumbnails/photo4.jpg"
+                      srcset="images/tour/photos/thumbnails/photo4@2x.jpg 2x" height="80" width="96"
+                      alt="House photo 4">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal">
+        <div class="modal__content">
+          <div class="modal__header">
+            <button class="modal__close-btn btn" type="button" aria-label="Close window">
+              <svg class="modal__close-btn-icon" width="18" height="18" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="swiper-button-prev-modal">←
+          </div>
+          <div class="swiper-button-next-modal">→
+          </div>
+          <div class="modal-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" data-hash="slide-1">
+                <iframe class="modal__video" width="640" height="360"
+                  src="http://www.youtube.com/embed/ketQTGwA4Lo?autoplay=0&disablekb=1"></iframe>
+              </div>
+              <div class="swiper-slide" data-hash="slide-2">
+                <img class="modal__photo-link-img" src="images/tour/photos/photo2.jpg" height="360" width="640"
+                  alt="House photo 2">
+              </div>
+              <div class="swiper-slide" data-hash="slide-3">
+                <img class="modal__photo-link-img" src="images/tour/photos/photo3.jpg" height="360" width="640"
+                  alt="House photo 3">
+              </div>
+              <div class="swiper-slide" data-hash="slide-4">
+                <img class="modal__photo-link-img" src="images/tour/photos/photo4.jpg" height="360" width="640"
+                  alt="House photo 4">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="container">
+        <div class="reviews__content">
+          <div class="reviews__title-wrapper">
+            <div class="title-block title-block--center">
+              <span class="title-block__subtitle">See Our Review</span>
+              <h2 class="title-block__title">What Our User Say About Us</h2>
+            </div>
+          </div>
+          <div class="review-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="review-card">
+                  <img class="review-card__img" src="images/reviews/card1/img.jpg"
+                    srcset="images/reviews/card1/img@2x.jpg 2x" height="400" width="740" alt="Review house photo">
+                  <div class="review-card__text-wrapper">
+                    <h3 class="review-card__title">My house sold out fast!</h3>
+                    <p class="review-card__text">I was finally able to sell my house quickly through Hounter by
+                      immediately
+                      setting me up with people who wanted my house. I also do not get a discount from the sale of my
+                      house. Awesome!</p>
+                    <div class="review-card__bottom-block">
+                      <div class="review-card__user">
+                        <img class="review-card__user-img" src="images/reviews/card1/user.png"
+                          srcset="images/reviews/card1/user@2x.png 2x" height="40" width="40" alt="Reviewer photo">
+                        <div class="review-card__user-text">
+                          <span class="review-card__user-name">Courtney Henry</span>
+                          <span class="review-card__user-position">CEO Andarafish</span>
+                        </div>
+                      </div>
+                      <div class="review-card__rating">
+                        <svg class="review-card__rating-icon" width="28" height="28" aria-hidden="true">
+                          <use xlink:href="images/sprite.svg#icon-star"></use>
+                        </svg>
+                        <span class="review-card__rating-text">4.3</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="review-card">
+                  <img class="review-card__img" src="images/reviews/card2/img.jpg"
+                    srcset="images/reviews/card2/img@2x.jpg 2x" height="400" width="740" alt="Review house photo">
+                  <div class="review-card__text-wrapper">
+                    <h3 class="review-card__title">Best! I got the house I wanted through Hounter</h3>
+                    <p class="review-card__text">Through this website I can get a house with the type and specifications
+                      I want very easily, without a complicated process to be able to find information on the house we
+                      want.</p>
+                    <div class="review-card__bottom-block">
+                      <div class="review-card__user">
+                        <img class="review-card__user-img" src="images/reviews/card2/user.png"
+                          srcset="images/reviews/card2/user@2x.png 2x" height="40" width="40" alt="Reviewer photo">
+                        <div class="review-card__user-text">
+                          <span class="review-card__user-name">Dianne Russell</span>
+                          <span class="review-card__user-position">Manager Director</span>
+                        </div>
+                      </div>
+                      <div class="review-card__rating">
+                        <svg class="review-card__rating-icon" width="28" height="28" aria-hidden="true">
+                          <use xlink:href="images/sprite.svg#icon-star"></use>
+                        </svg>
+                        <span class="review-card__rating-text">4.6</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="review-card">
+                  <img class="review-card__img" src="images/reviews/card3/img.jpg"
+                    srcset="images/reviews/card3/img@2x.jpg 2x" height="400" width="740" alt="Review house photo">
+                  <div class="review-card__text-wrapper">
+                    <h3 class="review-card__title">Through the Hounter, I can get a house for my self</h3>
+                    <p class="review-card__text">By looking for information about what kind of house we want, we managed
+                      to get the house we wanted very quickly, and directly connected with the seller to be able to ask
+                      about the details, very helpful!</p>
+                    <div class="review-card__bottom-block">
+                      <div class="review-card__user">
+                        <img class="review-card__user-img" src="images/reviews/card3/user.png"
+                          srcset="images/reviews/card3/user@2x.png 2x" height="40" width="40" alt="Reviewer photo">
+                        <div class="review-card__user-text">
+                          <span class="review-card__user-name">Esther Howard</span>
+                          <span class="review-card__user-position">Head of Marketing</span>
+                        </div>
+                      </div>
+                      <div class="review-card__rating">
+                        <svg class="review-card__rating-icon" width="28" height="28" aria-hidden="true">
+                          <use xlink:href="images/sprite.svg#icon-star"></use>
+                        </svg>
+                        <span class="review-card__rating-text">4.6</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="articles">
+      <div class="container">
+        <div class="articles__content">
+          <div class="articles__title-wrapper">
+            <div class="title-block title-block--center">
+              <span class="title-block__subtitle">See tips and trick from our partnership</span>
+              <h2 class="title-block__title">Find out more about
+                selling and buying homes</h2>
+            </div>
+          </div>
+          <div class="articles__link-wrapper">
+            <a class="articles__more-btn btn btn--round btn--deep-green" href="#">More Artikel</a>
+          </div>
+          <ul class="articles__list">
+            <li class="articles__item">
+              <div class="article-card article-card--flat">
+                <a class="article-card__link" href="#" aria-label="Link to the article">
+                  <img class="article-card__img" src="images/articles/card4/img.jpg"
+                    srcset="images/articles/card4/img@2x.jpg 2x" height="144" width="200" alt="Article picture">
+                  <div class="article-card__text-wrapper">
+                    <div class="article-card__author">
+                      <img class="article-card__author-img" src="images/articles/card4/author.png"
+                        srcset="images/articles/card4/author@2x.png 2x" height="32" width="32" alt="Author photo">
+                      <span class="article-card__author-name">Cameron Williamson</span>
+                    </div>
+                    <h3 class="article-card__title">
+                      12 Things to know before buying a house
+                    </h3>
+                    <p class="article-card__text">Want to buy a house but are unsure about what we should know, here I
+                      will try to explain what we should know and check when we want to buy a house</p>
+                    <div class="article-card__info">
+                      <svg class="article-card__info-icon" width="24" height="24" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#icon-timer"></use>
+                      </svg>
+                      <span class="article-card__info-text">8 min read | 25 Apr 2021</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li class="articles__item">
+              <div class="article-card">
+                <a class="article-card__link" href="#" aria-label="Link to the article">
+                  <img class="article-card__img" src="images/articles/card1/img.jpg"
+                    srcset="images/articles/card1/img@2x.jpg 2x" height="144" width="200" alt="Article picture">
+                  <div class="article-card__text-wrapper">
+                    <div class="article-card__author">
+                      <img class="article-card__author-img" src="images/articles/card1/author.png"
+                        srcset="images/articles/card1/author@2x.png 2x" height="32" width="32" alt="Author photo">
+                      <span class="article-card__author-name">Dianne Russell</span>
+                    </div>
+                    <h3 class="article-card__title">
+                      The things we need to check when we want to buy a house
+                    </h3>
+                    <div class="article-card__info">
+                      <svg class="article-card__info-icon" width="24" height="24" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#icon-timer"></use>
+                      </svg>
+                      <span class="article-card__info-text">4 min read | 25 Apr 2021</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li class="articles__item">
+              <div class="article-card">
+                <a class="article-card__link" href="#" aria-label="Link to the article">
+                  <img class="article-card__img" src="images/articles/card2/img.jpg"
+                    srcset="images/articles/card2/img@2x.jpg 2x" height="144" width="200" alt="Article picture">
+                  <div class="article-card__text-wrapper">
+                    <div class="article-card__author">
+                      <img class="article-card__author-img" src="images/articles/card2/author.png"
+                        srcset="images/articles/card2/author@2x.png 2x" height="32" width="32" alt="Author photo">
+                      <span class="article-card__author-name">Courtney Henry</span>
+                    </div>
+                    <h3 class="article-card__title">
+                      7 Ways to distinguish the quality of the house we want to buy
+                    </h3>
+                    <div class="article-card__info">
+                      <svg class="article-card__info-icon" width="24" height="24" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#icon-timer"></use>
+                      </svg>
+                      <span class="article-card__info-text">6 min read | 24 Apr 2021</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li class="articles__item">
+              <div class="article-card">
+                <a class="article-card__link" href="#" aria-label="Link to the article">
+                  <img class="article-card__img" src="images/articles/card3/img.jpg"
+                    srcset="images/articles/card3/img@2x.jpg 2x" height="144" width="200" alt="Article picture">
+                  <div class="article-card__text-wrapper">
+                    <div class="article-card__author">
+                      <img class="article-card__author-img" src="images/articles/card3/author.png"
+                        srcset="images/articles/card3/author@2x.png 2x" height="32" width="32" alt="Author photo">
+                      <span class="article-card__author-name">Darlene Robertson</span>
+                    </div>
+                    <h3 class="article-card__title">
+                      The best way to know the quality of the house we want to buy
+                    </h3>
+                    <div class="article-card__info">
+                      <svg class="article-card__info-icon" width="24" height="24" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#icon-timer"></use>
+                      </svg>
+                      <span class="article-card__info-text">2 min read | 24 Apr 2021</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="subscription">
+      <div class="container">
+        <div class="subscription__content">
+          <div class="subscription__background-images">
+            <img class="subscription__img subscription__img--l1" src="images/subscription/left1.jpg"
+              srcset="images/subscription/left1@2x.jpg 2x" height="85" width="85" alt="Subscription photo 1">
+            <img class="subscription__img subscription__img--l2 subscription__img--user"
+              src="images/subscription/left2.jpg" srcset="images/subscription/left2@2x.jpg 2x" height="41" width="41"
+              alt="Subscription photo 2">
+            <img class="subscription__img subscription__img--l3 subscription__img--user"
+              src="images/subscription/left3.jpg" srcset="images/subscription/left3@2x.jpg 2x" height="41" width="41"
+              alt="Subscription photo 3">
+            <img class="subscription__img subscription__img--l4" src="images/subscription/left4.jpg"
+              srcset="images/subscription/left4@2x.jpg 2x" height="58" width="58" alt="Subscription photo 4">
+            <img class="subscription__img subscription__img--r1" src="images/subscription/right1.jpg"
+              srcset="images/subscription/right1@2x.jpg 2x" height="74" width="74" alt="Subscription photo 5">
+            <img class="subscription__img subscription__img--r2 subscription__img--user"
+              src="images/subscription/right2.jpg" srcset="images/subscription/right2@2x.jpg 2x" height="40" width="40"
+              alt="Subscription photo 6">
+            <img class="subscription__img subscription__img--r3 subscription__img--user"
+              src="images/subscription/right3.jpg" srcset="images/subscription/right3@2x.jpg 2x" height="40" width="40"
+              alt="Subscription photo 7">
+            <img class="subscription__img subscription__img--r4" src="images/subscription/right4.jpg"
+              srcset="images/subscription/right4@2x.jpg 2x" height="59" width="59" alt="Subscription photo 8">
+          </div>
+          <div class="subscription__center">
+            <div class="subscription__title-wrapper">
+              <div class="title-block title-block--center">
+                <h2 class="title-block__title title-block__title--ad">Subscribe For More Info</h2>
+                <h2 class="title-block__title title-block__title--ad">and update from Hounter</h2>
+              </div>
+            </div>
+            <form class="custom-input custom-input--no-minwidth" action="#" method="POST">
+              <input class="custom-input__input" type="email" name="email" id="email" placeholder="Your email here">
+              <svg class="custom-input__input-icon custom-input__input-icon--blue" width="24" height="24"
+                aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-mail"></use>
+              </svg>
+              <button class="custom-input__submit-btn btn btn--round btn--deep-green" type="submit"
+                aria-label="Search button">
+                <span class="custom-input__submit-btn-text">Subsribe Now</span>
+                <svg class="custom-input__submit-btn-icon custom-input__submit-btn-icon--appears-on-570" width="24"
+                  height="24" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-arrow-forward"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__left-column">
+          <div class="footer__logo">
+            <a class="footer__logo-link" href="index.html" aria-label="Link to the main page">
+              <svg class="footer__logo-icon" width="36" height="36" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#logo"></use>
+              </svg>
+              <span class="footer__logo-text">Hounter</span>
+            </a>
+          </div>
+          <p class="footer__text">We provide information about properties such as houses, villas and apartments to help
+            people find their dream home</p>
+          <div class="footer__social-wrapper">
+            <div class="socials">
+              <ul class="socials__list">
+                <li class="socials__item">
+                  <a class="socials__link" href="#" aria-label="Link to Facebook">
+                    <svg class="socials__link-icon" width="32" height="32" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link" href="#" aria-label="Link to Twitter">
+                    <svg class="socials__link-icon" width="32" height="32" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link" href="#" aria-label="Link to Instagram">
+                    <svg class="socials__link-icon" width="32" height="32" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__right-column">
+          <nav class="footer__nav">
+            <div class="footer__nav-column footer__nav-column--col1">
+              <button class="footer__nav-title-btn" type="button">Property</button>
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item">
+                  <a class="footer__nav-link" href="#">House</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="footer__nav-link" href="#">Apartment</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="footer__nav-link" href="#">Villa</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__nav-column footer__nav-column--col2">
+              <button class="footer__nav-title-btn" type="button">Article</button>
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item">
+                  <a class="footer__nav-link" href="#">New Article</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="footer__nav-link" href="#">Popular Article</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="footer__nav-link" href="#">Most Read</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="footer__nav-link" href="#">Tips &amp; Tricks</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__nav-column footer__nav-column--col3">
+              <button class="footer__nav-title-btn" type="button">Contact</button>
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item">
+                  <a class="footer__nav-link" href="#">2464 Royal Ln. Mesa, New Jersey 45463</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="footer__nav-link" href="tel:6715550110">(671) 555-0110</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="footer__nav-link" href="mailto:info@hounter.com">info@hounter.com</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <nav class="footer__nav accordion-container">
+            <div class="footer__nav-column ac">
+              <button class="ac-trigger footer__nav-title-btn" type="button">Property</button>
+              <ul class="footer__nav-list ac-panel">
+                <li class="footer__nav-item">
+                  <a class="ac-text footer__nav-link" href="#">House</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="ac-text footer__nav-link" href="#">Apartment</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="ac-text footer__nav-link" href="#">Villa</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__nav-column ac">
+              <button class="ac-trigger footer__nav-title-btn" type="button">Article</button>
+              <ul class="footer__nav-list ac-panel">
+                <li class="footer__nav-item">
+                  <a class="ac-text footer__nav-link" href="#">New Article</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="ac-text footer__nav-link" href="#">Popular Article</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="ac-text footer__nav-link" href="#">Most Read</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="ac-text footer__nav-link" href="#">Tips &amp; Tricks</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__nav-column footer__nav-column--col3 ac">
+              <button class="ac-trigger footer__nav-title-btn" type="button">Contact</button>
+              <ul class="footer__nav-list ac-panel">
+                <li class="footer__nav-item">
+                  <a class="ac-text footer__nav-link" href="#">2464 Royal Ln. Mesa, New Jersey 45463</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="ac-text footer__nav-link" href="tel:6715550110">(671) 555-0110</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="ac-text footer__nav-link" href="mailto:info@hounter.com">info@hounter.com</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

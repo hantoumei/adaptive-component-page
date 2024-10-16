@@ -1,0 +1,79 @@
+.custom-input {
+  position: relative;
+  min-width: 430px;
+
+
+  @media (max-width: 570px) {
+    min-width: unset;
+  }
+
+  &--no-minwidth {
+    min-width: unset;
+  }
+
+  &__input {
+    font-family: $ff-lexend;
+    width: 100%;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 17px 132px 17px 64px;
+    border-radius: 32px;
+    border: 1px solid $color-platinum;
+
+    @media (max-width: 1200px) {
+      padding: 13px 132px 13px 64px;
+    }
+
+    @media (max-width: 570px) {
+      font-size: 13px;
+      padding: 10px 55px 10px 35px;
+    }
+  }
+
+  &__input-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 24px;
+
+    @media (max-width: 570px) {
+      width: 18px;
+      height: 18px;
+      left: 12px;
+    }
+
+    &::placeholder {
+      color: $color-roman-silver;
+    }
+
+    &--orange {
+      color: $color-orange;
+    }
+
+    &--blue {
+      color: $color-blueberry;
+    }
+  }
+
+  &__submit-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 4px;
+
+    &-text {
+      @media (max-width: 570px) {
+        display: none;
+      }
+    }
+
+    &-icon--appears-on-570 {
+      display: none;
+
+      @media (max-width: 570px) {
+        display: flex;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.reviews {
+  overflow: hidden;
+  margin: 0 0 110px;
+  padding-bottom: 50px;
+  position: relative;
+
+  @media (max-width: 1200px) {
+    padding-bottom: 30px;
+    margin-bottom: 60px;
+  }
+
+  &__content {
+    height: auto;
+  }
+
+  &__title-wrapper {
+    margin: 0 0 40px;
+  }
+}

@@ -1,0 +1,29 @@
+.hero-swiper {
+  position: relative;
+  width: 859px;
+  overflow: unset;
+
+  @media (max-width: 1200px) {
+    width: 600px;
+    height: 90px;
+  }
+
+  @include vp-1023 {
+    width: 100%;
+  }
+
+}
+
+.hero .swiper-slide {
+  height: auto;
+  width: auto;
+  max-width: 328px;
+
+  @include vp-1023 {
+    max-width: 370px;
+  }
+
+  &-active {
+    height: auto;
+  }
+}

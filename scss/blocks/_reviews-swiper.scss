@@ -1,0 +1,26 @@
+// Reviews slider styles
+.review-swiper {
+  width: 100%;
+}
+
+
+.reviews .swiper-slide {
+  width: 740px;
+  height: auto;
+}
+
+.reviews .swiper-pagination {
+  position: absolute;
+  bottom: 6px;
+}
+
+.reviews .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background-color: $color-roman-silver;
+  margin: 0 8px !important;
+}
+
+.reviews .swiper-pagination-bullet-active {
+  background-color: $color-police-blue;
+}

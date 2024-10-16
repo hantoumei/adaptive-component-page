@@ -1,0 +1,81 @@
+.featured-swiper {
+  position: relative;
+
+}
+
+.featured .swiper-slide {
+  height: auto;
+  max-width: 340px;
+
+  @media (max-width: 1200px) {
+    max-width: 250px;
+  }
+
+  @include vp-1023 {
+    max-width: 230px;
+  }
+}
+
+.featured .swiper-button-wrapper {
+  position: absolute;
+  top: -85px;
+  right: 40px;
+  display: flex;
+  gap: 16px;
+  z-index: 1;
+
+  @media (max-width: 1200px) {
+    top: -50px;
+  }
+
+  @include vp-1023 {
+    gap: 5px;
+  }
+
+  @media (max-width: 530px) {
+    right: 0;
+  }
+
+  @media (max-width: 460px) {
+    top: -48px;
+    right: unset;
+  }
+}
+
+.featured .swiper-button-prev {
+  position: static;
+  border-radius: 32px;
+  color: $color-white;
+  background-color: $color-green-crayola;
+  width: 60px;
+  height: 52px;
+  --swiper-navigation-size: 16px;
+
+  @media (max-width: 1200px) {
+    --swiper-navigation-size: 12px;
+    width: 45px;
+    height: 38px;
+  }
+}
+
+.featured .swiper-button-next {
+  position: static;
+  border-radius: 32px;
+  color: $color-white;
+  background-color: $color-green-crayola;
+  width: 60px;
+  height: 52px;
+  --swiper-navigation-size: 16px;
+
+  @media (max-width: 1200px) {
+    --swiper-navigation-size: 12px;
+    width: 45px;
+    height: 38px;
+  }
+}
+
+.featured .swiper-button-disabled {
+  opacity: 1;
+  color: $color-police-blue;
+  background-color: $color-platinum;
+}

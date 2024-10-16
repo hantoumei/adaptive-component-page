@@ -1,0 +1,38 @@
+/* Global */
+/* ------------------------------------ */
+@import "global/_normalize.scss";
+@import "global/_variables";
+@import "global/_mixins";
+@import "global/_fonts";
+@import "global/_reboot";
+@import "global/_container";
+@import "global/_visually-hidden";
+
+
+/* Blocks */
+/* ------------------------------------ */
+
+@import "blocks/header";
+@import "blocks/btn";
+@import "blocks/main-nav";
+@import "blocks/custom-input";
+@import "blocks/hero";
+@import "blocks/hero-card";
+@import "blocks/hero-swiper";
+@import "blocks/featured";
+@import "blocks/featured-card";
+@import "blocks/featured-swiper";
+@import "blocks/tour";
+@import "blocks/modal";
+@import "blocks/modal-swiper";
+@import "blocks/gallery";
+@import "blocks/reviews";
+@import "blocks/review-card";
+@import "blocks/reviews-swiper";
+@import "blocks/articles";
+@import "blocks/title-block";
+@import "blocks/article-card";
+@import "blocks/subscription";
+@import "blocks/footer";
+@import "blocks/socials";
+@import "blocks/accordion";

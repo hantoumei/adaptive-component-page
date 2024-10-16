@@ -1,0 +1,251 @@
+.tour {
+  position: relative;
+  padding: 250px 0 0;
+  margin: -250px 0 120px;
+  background-image: url("../../images/background/2.jpg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 482px 690px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/background/2@2x.jpg");
+  }
+
+  @media (max-width: 1200px) {
+    margin-bottom: 60px;
+  }
+
+  @include vp-1023 {
+    background-image: none;
+  }
+
+  @media (min-resolution: 2dppx) and (max-width: 1023px) {
+    background-image: none;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+    @include vp-1023 {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  &__left-column {
+    padding: 28px 0 0 40px;
+
+    @media (max-width: 530px) {
+      padding: 28px 0 0 0;
+    }
+  }
+
+  &__title-wrapper {
+    margin: 0 0 17px;
+  }
+
+  &__text-block {
+    padding-bottom: 32px;
+    border-bottom: 1px solid $color-alice-blue;
+    margin: 0 0 33px;
+    display: flex;
+    gap: 5vw;
+
+    @media (max-width: 1950px) {
+      display: block;
+    }
+    
+    @media (max-width: 1550px) {
+      max-width: 440px;
+    }
+
+    @include vp-1023 {
+      max-width: 100%;
+    }
+  }
+
+  &__description {
+    color: $color-dark-blue-gray-75;
+    font-size: 16px;
+    line-height: 28px;
+    margin: 0 0 16px;
+
+    @media (max-width: 1200px) {
+      font-size: 13px;
+      line-height: 25px;
+    }
+
+    @media (max-width: 570px) {
+      font-size: 13px;
+      line-height: 25px;
+      margin: 0 0 10px;
+    }
+
+    @media (max-width: 360px) {
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+
+  &__details-title {
+    color: $color-space-cadet;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    margin: 0 0 16px;
+  }
+
+  &__details-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 54px;
+
+    @media (max-width: 1200px) {
+      gap: 10px 30px;
+    }
+
+    @media (max-width: 380px) {
+      gap: 10px;
+    }
+  }
+
+  &__detail-list-item {
+    width: calc(50% - 27px);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    @media (max-width: 1200px) {
+      gap: 10px;
+      width: calc(50% - 15px);
+    }
+
+    @media (max-width: 380px) {
+      gap: 5px;
+      width: calc(50% - 5px);
+    }
+  }
+
+  &__detail-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    @media (max-width: 380px) {
+      font-size: 13px;
+      line-height: 16px;
+    }
+  }
+
+  &__detail-icon {
+    color: $color-roman-silver;
+
+    @media (max-width: 1200px) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 440px;
+    padding: 0 0 27px;
+
+    @include vp-1023 {
+      max-width: 100%;
+    }
+
+    @media (max-width: 330px) {
+      gap: 10px;
+    }
+
+    &-user {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+
+      @media (max-width: 1200px) {
+        gap: 15px;
+      }
+
+      @media (max-width: 320px) {
+        gap: 10px;
+      }
+
+      &-img {
+        filter: drop-shadow(0px 9px 22px $color-mayorelle-blue);
+
+        @media (max-width: 1200px) {
+          width: 30px;
+          height: 30px;
+        }
+      }
+
+      &-text {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+        @media (max-width: 1200px) {
+          gap: 0;
+        }
+      }
+
+      &-name {
+        color: $color-space-cadet;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+
+        @media (max-width: 1200px) {
+          font-size: 14px;
+          line-height: 20px;
+        }
+
+        @media (max-width: 400px) {
+          font-size: 13px;;
+        }
+      }
+
+      &-position {
+        color: $color-roman-silver;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+
+        @media (max-width: 1200px) {
+          font-size: 13px;
+          line-height: 20px;
+        }
+
+        @media (max-width: 400px) {
+          font-size: 12px;;
+        }
+      }
+    }
+
+    &-btn {
+      gap: 16px !important;
+
+      @media (max-width: 800px) {
+        gap: 4px !important;
+      }
+
+      &-icon {
+        @media (max-width: 380px) {
+          display: none;
+        }
+      }
+    }
+  }
+
+
+}

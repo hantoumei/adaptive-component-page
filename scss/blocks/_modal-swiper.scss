@@ -1,0 +1,59 @@
+.modal-swiper {
+  position: relative;
+  width: 640px;
+  overflow: hidden;
+  width: 85vw;
+  height: 70vh;
+}
+
+.modal .swiper-slide {
+  height: auto;
+  max-width: 85vw;
+  height: 70vh;
+}
+
+.modal .swiper-button-prev-modal {
+  cursor: pointer;
+  user-select: none;
+  position: absolute;
+  left: -25px;
+  top: 55%;
+  border-radius: 32px;
+  padding: 25px;
+  color: $color-white;
+  background-color: $color-green-crayola;
+  z-index: 2;
+  padding: 9px 15px 15px;
+  font-size: 28px;
+
+  @media (max-width: 760px) {
+    left: 0;
+    top: 5px;
+  }
+}
+
+.modal .swiper-button-next-modal {
+  cursor: pointer;
+  user-select: none;
+  position: absolute;
+  right: -25px;
+  top: 55%;
+  border-radius: 32px;
+  padding: 9px 15px 15px;
+  color: $color-white;
+  background-color: $color-green-crayola;
+  z-index: 2;
+  font-size: 28px;
+
+  @media (max-width: 760px) {
+    left: 60px;
+    top: 5px;
+    right: unset;
+  }
+}
+
+.modal .swiper-button-disabled {
+  background-color: $color-platinum;
+  color: $color-police-blue;
+  cursor: default;
+}

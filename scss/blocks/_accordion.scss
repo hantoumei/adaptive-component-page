@@ -1,0 +1,52 @@
+.accordion-container {
+  display: none;
+
+  @media (max-width: 850px) {
+    display: block;
+  }
+}
+
+.ac {
+  margin: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.ac .ac-trigger::after {
+  content: '▼';
+  font-size: 13px;
+}
+
+.ac .ac-trigger:focus {
+  color: $color-space-cadet;
+}
+
+.ac .ac-trigger {
+  padding: 0px 32px 0px 0px;
+}
+
+.ac .ac-panel {
+  padding: 0 0 18px;
+}
+
+.ac .ac-panel .ac-text {
+  font-family: $ff-lexend;
+  color: $color-roman-silver;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.ac .ac-trigger {
+  font-family: $ff-lexend;
+  color: $color-space-cadet;
+  font-size: 600px;
+  font-size: 18px;
+  line-height: 23px;
+  margin: 0 0 18px;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  display: flex;
+  background-color: transparent;
+}
