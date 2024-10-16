@@ -3,7 +3,7 @@ An adaptive layout page (320px - 2560px).
 
 HTML/SCSS/JS
 
-Library used:
+Libraries used:
 
 * Swiper.js
 https://github.com/nolimits4web/swiper
